@@ -5,6 +5,8 @@ import React, { useState, useRef, MouseEvent } from 'react';
 import {
   Dialog,
   DialogContent,
+  DialogHeader,
+  DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
 import Image from 'next/image';
@@ -67,6 +69,9 @@ export function ImageDialog({ imageUrl, alt, children }: ImageDialogProps) {
         onMouseLeave={handleMouseLeave}
         ref={containerRef}
       >
+        <DialogHeader>
+            <DialogTitle className="sr-only">{alt}</DialogTitle>
+        </DialogHeader>
         <div className="relative w-full h-full overflow-hidden">
             <Image
                 ref={imageRef}
