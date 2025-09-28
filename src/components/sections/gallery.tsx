@@ -26,7 +26,8 @@ const Gallery = () => {
                     <Image
                       src={image.imageUrl}
                       alt={image.description}
-                      fill
+                      width={image.width}
+                      height={image.height}
                       className="object-cover w-full h-full transform transition-transform duration-300 group-hover:scale-105"
                       data-ai-hint={image.imageHint}
                     />

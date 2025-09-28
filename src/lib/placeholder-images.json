@@ -4,109 +4,145 @@
       "id": "hero-background",
       "description": "A lavish Indian food buffet setup for a celebration.",
       "imageUrl": "https://i.ibb.co/LhYyzvr5/A-lavish-Indian-food-buffet-setup-for-a-celebration.jpg",
-      "imageHint": "indian catering"
+      "imageHint": "indian catering",
+      "width": 1920,
+      "height": 1280
     },
     {
       "id": "gallery-1",
       "description": "Buffet setup for a wedding.",
       "imageUrl": "https://i.ibb.co/vx4xrcTv/Whats-App-Image-2025-09-28-at-2-42-40-PM-1.jpg",
-      "imageHint": "wedding buffet"
+      "imageHint": "wedding buffet",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-2",
       "description": "Close-up of paneer tikka.",
       "imageUrl": "https://i.ibb.co/bRdWnPZb/Whats-App-Image-2025-09-28-at-2-42-55-PM.jpg",
-      "imageHint": "paneer tikka"
+      "imageHint": "paneer tikka",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-3",
       "description": "Vibrant chaat counter at an event.",
       "imageUrl": "https://i.ibb.co/chppFP7J/Whats-App-Image-2025-09-28-at-2-42-40-PM.jpg",
-      "imageHint": "chaat counter"
+      "imageHint": "chaat counter",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-4",
       "description": "Assortment of Indian sweets.",
       "imageUrl": "https://i.ibb.co/mrwj00kJ/Whats-App-Image-2025-09-28-at-2-41-02-PM-1.jpg",
-      "imageHint": "indian sweets"
+      "imageHint": "indian sweets",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-5",
       "description": "Professional catering staff serving guests.",
       "imageUrl": "https://i.ibb.co/HD2nFyDx/Whats-App-Image-2025-09-28-at-2-41-05-PM.jpg",
-      "imageHint": "catering staff"
+      "imageHint": "catering staff",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-6",
       "description": "Elegant table setting for a corporate event.",
       "imageUrl": "https://i.ibb.co/N63jp3ZF/Whats-App-Image-2025-09-28-at-2-42-50-PM-1.jpg",
-      "imageHint": "event dining"
+      "imageHint": "event dining",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-7",
       "description": "Freshly made puris.",
       "imageUrl": "https://i.ibb.co/FLKtNm59/Whats-App-Image-2025-09-28-at-2-42-51-PM.jpg",
-      "imageHint": "indian food"
+      "imageHint": "indian food",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-8",
       "description": "A colorful display of salads and appetizers.",
       "imageUrl": "https://i.ibb.co/PzPyzqTG/Whats-App-Image-2025-09-28-at-2-42-38-PM.jpg",
-      "imageHint": "salad bar"
+      "imageHint": "salad bar",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-9",
       "description": "A catering display with various dishes.",
       "imageUrl": "https://i.ibb.co/W45WX5q5/Whats-App-Image-2025-09-28-at-2-41-02-PM-2.jpg",
-      "imageHint": "catering display"
+      "imageHint": "catering display",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-10",
       "description": "Indian sweets and desserts.",
       "imageUrl": "https://i.ibb.co/zTDFr3gd/Whats-App-Image-2025-09-28-at-2-41-02-PM.jpg",
-      "imageHint": "indian desserts"
+      "imageHint": "indian desserts",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-11",
       "description": "A serving of a main course.",
       "imageUrl": "https://i.ibb.co/PGjkys0z/Whats-App-Image-2025-09-28-at-2-41-01-PM.jpg",
-      "imageHint": "indian maincourse"
+      "imageHint": "indian maincourse",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-12",
       "description": "Guests being served at an event.",
       "imageUrl": "https://i.ibb.co/wrMjhCKd/Whats-App-Image-2025-09-28-at-2-41-03-PM-1.jpg",
-      "imageHint": "event catering"
+      "imageHint": "event catering",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-13",
       "description": "Food preparation for a large event.",
       "imageUrl": "https://i.ibb.co/ksgRJ2K7/Whats-App-Image-2025-09-28-at-2-42-44-PM.jpg",
-      "imageHint": "food preparation"
+      "imageHint": "food preparation",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-14",
       "description": "Cooking in a large pot.",
       "imageUrl": "https://i.ibb.co/SDvzHcbQ/Whats-App-Image-2025-09-28-at-2-42-46-PM.jpg",
-      "imageHint": "large cooking"
+      "imageHint": "large cooking",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-15",
       "description": "Display of delicious food items.",
       "imageUrl": "https://i.ibb.co/tpKk1d82/Whats-App-Image-2025-09-28-at-2-42-49-PM.jpg",
-      "imageHint": "food display"
+      "imageHint": "food display",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-16",
       "description": "Serving food to guests.",
       "imageUrl": "https://i.ibb.co/s9CVxqzf/Whats-App-Image-2025-09-28-at-2-42-42-PM-2.jpg",
-      "imageHint": "serving food"
+      "imageHint": "serving food",
+      "width": 1024,
+      "height": 768
     },
     {
       "id": "gallery-17",
       "description": "Catered food line.",
       "imageUrl": "https://i.ibb.co/G4Dvzy0F/Whats-App-Image-2025-09-28-at-2-41-03-PM-2.jpg",
-      "imageHint": "catering line"
+      "imageHint": "catering line",
+      "width": 1024,
+      "height": 768
     }
   ]
 }
