@@ -1,6 +1,6 @@
 import React from 'react';
-import { PHONE_NUMBER, ADDRESS, GOOGLE_MAPS_LINK, INSTAGRAM_LINK } from '@/lib/constants';
-import { Phone, MapPin, Instagram } from 'lucide-react';
+import { PHONE_NUMBER, ADDRESS, GOOGLE_MAPS_LINK, INSTAGRAM_LINK, WHATSAPP_BOOK_NOW_LINK } from '@/lib/constants';
+import { Phone, MapPin, Instagram, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Contact = () => {
@@ -29,6 +29,15 @@ const Contact = () => {
                 <h3 className="font-bold text-lg">Phone</h3>
                 <a href={`tel:${PHONE_NUMBER}`} className="text-muted-foreground hover:text-primary transition-colors">
                   {PHONE_NUMBER}
+                </a>
+              </div>
+            </div>
+             <div className="flex items-start gap-4">
+              <MessageCircle className="h-6 w-6 text-primary mt-1 shrink-0" />
+              <div>
+                <h3 className="font-bold text-lg">WhatsApp</h3>
+                <a href={WHATSAPP_BOOK_NOW_LINK} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                  Chat with us
                 </a>
               </div>
             </div>
