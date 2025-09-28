@@ -1,42 +1,57 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, UtensilsCrossed } from 'lucide-react';
 import { WHATSAPP_BOOK_NOW_LINK, NAV_LINKS } from '@/lib/constants';
+import { cn } from '@/lib/utils';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
-        <div className="mr-4 flex items-center">
+    <header className={cn(
+      "sticky top-0 z-50 w-full transition-all duration-300",
+      isScrolled ? "border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "bg-transparent"
+    )}>
+      <div className="container flex h-20 items-center">
+        <div className="mr-auto flex items-center">
           <Link href="/" className="flex items-center gap-2 font-bold">
-            <UtensilsCrossed className="h-6 w-6 text-primary" />
-            <span className="font-headline text-lg">Shree Om Annapurna Caterers</span>
+            <UtensilsCrossed className="h-8 w-8 text-primary" />
+            <span className={cn("font-headline text-2xl", isScrolled ? "text-foreground" : "text-white")}>
+              Shree Om Annapurna
+            </span>
           </Link>
         </div>
-        <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
+        <nav className="hidden items-center space-x-8 text-base font-medium md:flex">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="transition-colors hover:text-primary"
+              className={cn("transition-colors hover:text-primary", isScrolled ? "text-foreground" : "text-white")}
             >
               {link.label}
             </Link>
           ))}
         </nav>
-        <div className="flex flex-1 items-center justify-end space-x-4">
-          <Button asChild className="hidden bg-accent hover:bg-accent/90 text-accent-foreground md:inline-flex">
+        <div className="ml-auto flex items-center gap-4">
+          <Button asChild className="hidden md:inline-flex" variant={isScrolled ? 'default' : 'secondary'}>
             <a href={WHATSAPP_BOOK_NOW_LINK} target="_blank" rel="noopener noreferrer">Book Now</a>
           </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
-              <Button variant="outline" size="icon">
+              <Button variant="outline" size="icon" className={cn(isScrolled ? "" : "text-white border-white/50 hover:bg-white/10 hover:text-white")}>
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Open Menu</span>
               </Button>
@@ -62,7 +77,7 @@ const Header = () => {
                   ))}
                 </nav>
                 <div className="mt-auto">
-                    <Button asChild size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                    <Button asChild size="lg" className="w-full">
                         <a href={WHATSAPP_BOOK_NOW_LINK} target="_blank" rel="noopener noreferrer">Book Now</a>
                     </Button>
                 </div>
