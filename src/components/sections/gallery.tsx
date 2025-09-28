@@ -23,7 +23,7 @@ const Gallery = () => {
                   src={image.imageUrl}
                   alt={image.description}
                   fill
-                  className="object-contain w-full h-full transform transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover w-full h-full transform transition-transform duration-300 group-hover:scale-105"
                   data-ai-hint={image.imageHint}
                 />
               </div>
