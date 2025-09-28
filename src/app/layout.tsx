@@ -4,8 +4,20 @@ import CustomCursor from '@/components/ui/custom-cursor';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Annapurna Delight',
-  description: 'Authentic Flavours, Unforgettable Events. The Leading Caterers in Ravet, Pune since 2006.',
+  title: 'Annapurna Delight - Top Caterers in Ravet, Pune',
+  description: 'Authentic Flavours, Unforgettable Events. The Leading Caterers in Ravet, Pune since 2006. Specializing in wedding, corporate, and party catering with authentic Indian cuisine.',
+  keywords: [
+    'best caterers in Pune',
+    'catering services Ravet',
+    'wedding caterers Pune',
+    'corporate event catering Pune',
+    'party caterers in Pimpri-Chinchwad',
+    'Annapurna Delight caterers',
+    'authentic Indian catering',
+    'Maharashtrian food catering',
+    'event catering services',
+    'top caterers near me'
+  ],
 };
 
 export default function RootLayout({
