@@ -8,15 +8,15 @@ const Gallery = () => {
   const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery-'));
 
   return (
-    <section id="gallery" className="py-16 md:py-24">
+    <section id="gallery" className="py-12 md:py-24">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-headline mb-4">Glimpses From Our Events</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="text-2xl sm:text-4xl font-headline mb-4">Glimpses From Our Events</h2>
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             A taste of the unforgettable experiences we help create.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
           {galleryImages.map((image, index) => {
             const direction = index % 4 < 2 ? 'left' : 'right';
             return (

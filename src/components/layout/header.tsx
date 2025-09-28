@@ -39,11 +39,11 @@ const Header = () => {
         isScrolled ? "border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "bg-transparent"
       )}
     >
-      <div className="container flex h-20 items-center">
+      <div className="container flex h-16 md:h-20 items-center">
         <div className="mr-auto flex items-center">
           <Link href="/" className="flex items-center gap-2 font-bold">
-            <UtensilsCrossed className="h-8 w-8 text-primary" />
-            <span className={cn("font-headline text-2xl", linkColor)}>
+            <UtensilsCrossed className="h-7 w-7 md:h-8 md:w-8 text-primary" />
+            <span className={cn("font-headline text-xl md:text-2xl", linkColor)}>
               Shree Om Annapurna
             </span>
           </Link>

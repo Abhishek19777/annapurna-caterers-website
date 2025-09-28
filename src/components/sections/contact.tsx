@@ -5,11 +5,11 @@ import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-secondary">
+    <section id="contact" className="py-12 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-headline mb-4">Get In Touch</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="text-2xl sm:text-4xl font-headline mb-4">Get In Touch</h2>
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             We'd love to hear about your event. Contact us for a free consultation.
           </p>
         </div>
@@ -52,7 +52,7 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <div className="rounded-lg overflow-hidden shadow-lg h-80 lg:h-96">
+            <div className="rounded-lg overflow-hidden shadow-lg h-64 md:h-80 lg:h-96">
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.459388969145!2d73.76686947594952!3d18.6430962646698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9c7682f1943%3A0x6b45a7095c27f670!2sShree%20Om%20Annapurna%20Caterers!5e0!3m2!1sen!2sin!4v1700030612345!5m2!1sen!2sin"
                 width="100%"
