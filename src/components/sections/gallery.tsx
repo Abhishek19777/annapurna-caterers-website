@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
+import AnimatedGalleryItem from '@/components/ui/animated-gallery-item';
 
 const Gallery = () => {
   const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery-'));
@@ -16,19 +17,24 @@ const Gallery = () => {
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {galleryImages.map((image) => (
-            <Card key={image.id} className="overflow-hidden group">
-              <div className="relative w-full aspect-square">
-                <Image
-                  src={image.imageUrl}
-                  alt={image.description}
-                  fill
-                  className="object-cover w-full h-full transform transition-transform duration-300 group-hover:scale-105"
-                  data-ai-hint={image.imageHint}
-                />
-              </div>
-            </Card>
-          ))}
+          {galleryImages.map((image, index) => {
+            const direction = index % 4 < 2 ? 'left' : 'right';
+            return (
+              <AnimatedGalleryItem key={image.id} direction={direction}>
+                <Card className="overflow-hidden group">
+                  <div className="relative w-full aspect-square">
+                    <Image
+                      src={image.imageUrl}
+                      alt={image.description}
+                      fill
+                      className="object-cover w-full h-full transform transition-transform duration-300 group-hover:scale-105"
+                      data-ai-hint={image.imageHint}
+                    />
+                  </div>
+                </Card>
+              </AnimatedGalleryItem>
+            );
+          })}
         </div>
       </div>
     </section>
