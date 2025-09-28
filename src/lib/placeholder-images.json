@@ -53,6 +53,60 @@
       "description": "A colorful display of salads and appetizers.",
       "imageUrl": "https://i.ibb.co/PzPyzqTG/Whats-App-Image-2025-09-28-at-2-42-38-PM.jpg",
       "imageHint": "salad bar"
+    },
+    {
+      "id": "gallery-9",
+      "description": "A catering display with various dishes.",
+      "imageUrl": "https://i.ibb.co/W45WX5q5/Whats-App-Image-2025-09-28-at-2-41-02-PM-2.jpg",
+      "imageHint": "catering display"
+    },
+    {
+      "id": "gallery-10",
+      "description": "Indian sweets and desserts.",
+      "imageUrl": "https://i.ibb.co/zTDFr3gd/Whats-App-Image-2025-09-28-at-2-41-02-PM.jpg",
+      "imageHint": "indian desserts"
+    },
+    {
+      "id": "gallery-11",
+      "description": "A serving of a main course.",
+      "imageUrl": "https://i.ibb.co/PGjkys0z/Whats-App-Image-2025-09-28-at-2-41-01-PM.jpg",
+      "imageHint": "indian maincourse"
+    },
+    {
+      "id": "gallery-12",
+      "description": "Guests being served at an event.",
+      "imageUrl": "https://i.ibb.co/wrMjhCKd/Whats-App-Image-2025-09-28-at-2-41-03-PM-1.jpg",
+      "imageHint": "event catering"
+    },
+    {
+      "id": "gallery-13",
+      "description": "Food preparation for a large event.",
+      "imageUrl": "https://i.ibb.co/ksgRJ2K7/Whats-App-Image-2025-09-28-at-2-42-44-PM.jpg",
+      "imageHint": "food preparation"
+    },
+    {
+      "id": "gallery-14",
+      "description": "Cooking in a large pot.",
+      "imageUrl": "https://i.ibb.co/SDvzHcbQ/Whats-App-Image-2025-09-28-at-2-42-46-PM.jpg",
+      "imageHint": "large cooking"
+    },
+    {
+      "id": "gallery-15",
+      "description": "Display of delicious food items.",
+      "imageUrl": "https://i.ibb.co/tpKk1d82/Whats-App-Image-2025-09-28-at-2-42-49-PM.jpg",
+      "imageHint": "food display"
+    },
+    {
+      "id": "gallery-16",
+      "description": "Serving food to guests.",
+      "imageUrl": "https://i.ibb.co/s9CVxqzf/Whats-App-Image-2025-09-28-at-2-42-42-PM-2.jpg",
+      "imageHint": "serving food"
+    },
+    {
+      "id": "gallery-17",
+      "description": "Catered food line.",
+      "imageUrl": "https://i.ibb.co/G4Dvzy0F/Whats-App-Image-2025-09-28-at-2-41-03-PM-2.jpg",
+      "imageHint": "catering line"
     }
   ]
 }
