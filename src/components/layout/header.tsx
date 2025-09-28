@@ -59,7 +59,7 @@ const Header = () => {
           ))}
         </nav>
         <div className="ml-auto flex items-center gap-4">
-          <Button asChild className="hidden md:inline-flex" variant={isScrolled ? 'default' : 'secondary'}>
+          <Button asChild className="hidden md:inline-flex">
             <a href={WHATSAPP_BOOK_NOW_LINK} target="_blank" rel="noopener noreferrer">Book Now</a>
           </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
