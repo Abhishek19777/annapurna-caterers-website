@@ -60,7 +60,7 @@ const Header = () => {
               {hoveredLink === link.href && (
                 <motion.span
                   layoutId="hover-bg"
-                  className="absolute inset-0 -z-10 rounded-md bg-accent/10"
+                  className="absolute inset-0 -z-10 rounded-md bg-primary/10"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
@@ -76,7 +76,7 @@ const Header = () => {
           </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
-              <Button variant="outline" size="icon" className={cn(!isScrolled && "border-primary/50 text-foreground")}>
+              <Button variant="outline" size="icon" className={cn("text-foreground")}>
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Open Menu</span>
               </Button>
