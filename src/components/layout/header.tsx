@@ -15,12 +15,15 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      const scrolled = window.scrollY > 10;
+      if (scrolled !== isScrolled) {
+        setIsScrolled(scrolled);
+      }
     };
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Set initial state
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isScrolled]);
 
   const linkColor = isScrolled ? "text-foreground" : "text-white";
 
@@ -55,7 +58,7 @@ const Header = () => {
           </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
-              <Button variant="outline" size="icon" className={cn(isScrolled ? "" : "text-white border-white/50 hover:bg-white/10 hover:text-white")}>
+              <Button variant="outline" size="icon" className={cn(!isScrolled && "text-white border-white/50 hover:bg-white/10 hover:text-white")}>
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Open Menu</span>
               </Button>
