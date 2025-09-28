@@ -153,12 +153,12 @@ export default function PackageAssistant() {
             <AlertDialogDescription>
               {result && (
                 <div className="space-y-4 pt-4">
-                  <p className="font-bold text-lg text-primary">{result.recommendedPackage}</p>
-                  <p>{result.justification}</p>
+                  <div className="font-bold text-lg text-primary">{result.recommendedPackage}</div>
+                  <div>{result.justification}</div>
                 </div>
               )}
               {error && (
-                <p className="text-destructive">{error}</p>
+                <div className="text-destructive">{error}</div>
               )}
             </AlertDialogDescription>
           </AlertDialogHeader>
