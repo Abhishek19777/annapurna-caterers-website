@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A lavish Indian food buffet setup for a celebration.",
+      "imageUrl": "https://images.unsplash.com/photo-1733479189782-0d7d1283d019?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbmRpYW4lMjBjYXRlcmluZ3xlbnwwfHx8fDE3NTkwNDk1NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian catering"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Buffet setup for a wedding.",
+      "imageUrl": "https://images.unsplash.com/photo-1629878850623-ba862eec5fb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3ZWRkaW5nJTIwYnVmZmV0fGVufDB8fHx8MTc1OTA0OTU1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wedding buffet"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Close-up of paneer tikka.",
+      "imageUrl": "https://images.unsplash.com/photo-1690401769082-5f475f87fb22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGFuZWVyJTIwdGlra2F8ZW58MHx8fHwxNzU5MDA0ODY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paneer tikka"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Vibrant chaat counter at an event.",
+      "imageUrl": "https://images.unsplash.com/photo-1741769396149-ac9405138e03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjaGFhdCUyMGNvdW50ZXJ8ZW58MHx8fHwxNzU5MDQ5NTUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chaat counter"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Assortment of Indian sweets.",
+      "imageUrl": "https://images.unsplash.com/photo-1695568181558-034b7d3e49eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbmRpYW4lMjBzd2VldHN8ZW58MHx8fHwxNzU5MDI3OTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian sweets"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Professional catering staff serving guests.",
+      "imageUrl": "https://images.unsplash.com/photo-1636906227221-01445098448b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXRlcmluZyUyMHN0YWZmfGVufDB8fHx8MTc1OTA0OTU1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "catering staff"
+    },
+    {
+      "id": "gallery-6",
+      "description": "Elegant table setting for a corporate event.",
+      "imageUrl": "https://images.unsplash.com/photo-1628578569073-8ee77295315d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxldmVudCUyMGRpbmluZ3xlbnwwfHx8fDE3NTkwNDk1NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "event dining"
+    },
+    {
+      "id": "gallery-7",
+      "description": "Freshly made puris.",
+      "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBmb29kfGVufDB8fHx8MTc1ODkzMzU1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian food"
+    },
+    {
+      "id": "gallery-8",
+      "description": "A colorful display of salads and appetizers.",
+      "imageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzYWxhZCUyMGJhcnxlbnwwfHx8fDE3NTg5OTA5OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "salad bar"
+    }
+  ]
 }

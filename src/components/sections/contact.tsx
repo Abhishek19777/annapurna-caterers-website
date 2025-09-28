@@ -1,0 +1,73 @@
+import React from 'react';
+import { PHONE_NUMBER, EMAIL_ADDRESS, ADDRESS } from '@/lib/constants';
+import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
+
+const Contact = () => {
+  return (
+    <section id="contact" className="py-16 md:py-24 bg-secondary">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-headline mb-4">Get In Touch</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            We'd love to hear about your event. Contact us for a free consultation.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div className="space-y-6">
+            <div className="flex items-start gap-4">
+              <MapPin className="h-6 w-6 text-primary mt-1 shrink-0" />
+              <div>
+                <h3 className="font-bold text-lg">Address</h3>
+                <p className="text-muted-foreground">{ADDRESS}</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <Phone className="h-6 w-6 text-primary mt-1 shrink-0" />
+              <div>
+                <h3 className="font-bold text-lg">Phone</h3>
+                <a href={`tel:${PHONE_NUMBER}`} className="text-muted-foreground hover:text-primary transition-colors">
+                  {PHONE_NUMBER}
+                </a>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <Mail className="h-6 w-6 text-primary mt-1 shrink-0" />
+              <div>
+                <h3 className="font-bold text-lg">Email</h3>
+                <a href={`mailto:${EMAIL_ADDRESS}`} className="text-muted-foreground hover:text-primary transition-colors">
+                  {EMAIL_ADDRESS}
+                </a>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+                <div className="mt-1 shrink-0">
+                    <h3 className="font-bold text-lg">Follow Us</h3>
+                </div>
+                <div className="flex space-x-4 pt-1">
+                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Facebook className="h-6 w-6" /></a>
+                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Instagram className="h-6 w-6" /></a>
+                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Twitter className="h-6 w-6" /></a>
+                </div>
+            </div>
+          </div>
+
+          <div className="rounded-lg overflow-hidden shadow-lg h-80 lg:h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30245.24922123512!2d73.7494723048566!3d18.65213601191069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e76cf76dfd%3A0x7d4983b632936785!2sRavet%2C%20Pimpri-Chinchwad%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1684321098765!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Location of Shree Om Annapurna Caterers in Ravet, Pune"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
