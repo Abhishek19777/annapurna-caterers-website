@@ -18,8 +18,11 @@ const Header = () => {
       setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Set initial state
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const linkColor = isScrolled ? "text-foreground" : "text-white";
 
   return (
     <header className={cn(
@@ -30,7 +33,7 @@ const Header = () => {
         <div className="mr-auto flex items-center">
           <Link href="/" className="flex items-center gap-2 font-bold">
             <UtensilsCrossed className="h-8 w-8 text-primary" />
-            <span className={cn("font-headline text-2xl", isScrolled ? "text-foreground" : "text-white")}>
+            <span className={cn("font-headline text-2xl", linkColor)}>
               Shree Om Annapurna
             </span>
           </Link>
@@ -40,7 +43,7 @@ const Header = () => {
             <Link
               key={link.href}
               href={link.href}
-              className={cn("transition-colors hover:text-primary", isScrolled ? "text-foreground" : "text-white")}
+              className={cn("transition-colors hover:text-primary", linkColor)}
             >
               {link.label}
             </Link>
@@ -92,4 +95,3 @@ const Header = () => {
 };
 
 export default Header;
-
