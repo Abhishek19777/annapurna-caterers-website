@@ -1,6 +1,7 @@
 import React from 'react';
-import { PHONE_NUMBER, EMAIL_ADDRESS, ADDRESS } from '@/lib/constants';
+import { PHONE_NUMBER, EMAIL_ADDRESS, ADDRESS, GOOGLE_MAPS_LINK } from '@/lib/constants';
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   return (
@@ -52,17 +53,24 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="rounded-lg overflow-hidden shadow-lg h-80 lg:h-96">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30245.24922123512!2d73.7494723048566!3d18.65213601191069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e76cf76dfd%3A0x7d4983b632936785!2sRavet%2C%20Pimpri-Chinchwad%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1684321098765!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen={false}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Location of Shree Om Annapurna Caterers in Ravet, Pune"
-            ></iframe>
+          <div className="flex flex-col gap-4">
+            <div className="rounded-lg overflow-hidden shadow-lg h-80 lg:h-96">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.459388969145!2d73.76686947594952!3d18.6430962646698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9c7682f1943%3A0x6b45a7095c27f670!2sShree%20Om%20Annapurna%20Caterers!5e0!3m2!1sen!2sin!4v1700030612345!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Location of Shree Om Annapurna Caterers in Ravet, Pune"
+                ></iframe>
+            </div>
+            <Button asChild>
+                <a href={GOOGLE_MAPS_LINK} target="_blank" rel="noopener noreferrer">
+                    Show in Google Maps
+                </a>
+            </Button>
           </div>
         </div>
       </div>

@@ -6,7 +6,6 @@ import WhyChooseUs from '@/components/sections/why-choose-us';
 import Gallery from '@/components/sections/gallery';
 import Contact from '@/components/sections/contact';
 import Footer from '@/components/layout/footer';
-import PackageAssistant from '@/components/package-assistant';
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
-        <PackageAssistant />
         <Packages />
         <WhyChooseUs />
         <Gallery />

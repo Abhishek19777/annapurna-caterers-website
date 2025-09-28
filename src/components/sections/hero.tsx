@@ -41,7 +41,7 @@ const Hero = () => {
           <Button asChild size="lg" variant="default">
             <Link href="#packages">View Our Packages</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
+          <Button asChild size="lg" variant="secondary">
             <Link href="#contact">Find Us on Map</Link>
           </Button>
         </div>

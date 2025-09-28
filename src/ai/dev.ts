@@ -1,4 +1,4 @@
 import { config } from 'dotenv';
 config();
 
-import '@/ai/flows/package-selection-assistant.ts';
+import '@/ai/ai-testimonial-generator.ts';
