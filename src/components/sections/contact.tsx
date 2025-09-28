@@ -1,6 +1,6 @@
 import React from 'react';
-import { PHONE_NUMBER, EMAIL_ADDRESS, ADDRESS, GOOGLE_MAPS_LINK } from '@/lib/constants';
-import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
+import { PHONE_NUMBER, ADDRESS, GOOGLE_MAPS_LINK, INSTAGRAM_LINK } from '@/lib/constants';
+import { Phone, MapPin, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Contact = () => {
@@ -33,22 +33,11 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <Mail className="h-6 w-6 text-primary mt-1 shrink-0" />
-              <div>
-                <h3 className="font-bold text-lg">Email</h3>
-                <a href={`mailto:${EMAIL_ADDRESS}`} className="text-muted-foreground hover:text-primary transition-colors">
-                  {EMAIL_ADDRESS}
-                </a>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
                 <div className="mt-1 shrink-0">
                     <h3 className="font-bold text-lg">Follow Us</h3>
                 </div>
                 <div className="flex space-x-4 pt-1">
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Facebook className="h-6 w-6" /></a>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Instagram className="h-6 w-6" /></a>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Twitter className="h-6 w-6" /></a>
+                    <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors"><Instagram className="h-6 w-6" /></a>
                 </div>
             </div>
           </div>

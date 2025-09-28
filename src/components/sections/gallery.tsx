@@ -18,13 +18,12 @@ const Gallery = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {galleryImages.map((image) => (
             <Card key={image.id} className="overflow-hidden group">
-              <div className="aspect-w-4 aspect-h-3">
+              <div className="relative w-full aspect-square">
                 <Image
                   src={image.imageUrl}
                   alt={image.description}
-                  width={400}
-                  height={300}
-                  className="object-cover w-full h-full transform transition-transform duration-300 group-hover:scale-105"
+                  fill
+                  className="object-contain w-full h-full transform transition-transform duration-300 group-hover:scale-105"
                   data-ai-hint={image.imageHint}
                 />
               </div>

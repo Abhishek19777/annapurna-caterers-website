@@ -1,9 +1,9 @@
 import { Award, Heart, PartyPopper, ChefHat, Sparkles, Clock, Medal } from "lucide-react";
 
 export const PHONE_NUMBER = "+919881337170";
-export const EMAIL_ADDRESS = "contact@annapurnacaterers.com";
 export const ADDRESS = "Ravet, Pune, Maharashtra, India";
 export const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/5n8NqRmbgUxRW19VA";
+export const INSTAGRAM_LINK = "https://www.instagram.com/shree_om_annapurna_catere?igsh=YXdxd2sxamcxMHd4";
 
 const WHATSAPP_BASE_URL = "https://wa.me/919881337170";
 
