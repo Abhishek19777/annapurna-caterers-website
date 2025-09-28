@@ -24,7 +24,7 @@ const Hero = () => {
         <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl drop-shadow-lg">
           WELCOME TO SHREE OM ANNAPURNA CATERERS
         </h1>
-        <p className="mt-4 max-w-3xl text-lg md:text-xl drop-shadow-md">
+        <p className="mt-4 max-w-3xl text-lg md:text-xl lg:text-2xl drop-shadow-md">
           Authentic Flavours, Unforgettable Events. The Leading Caterers in Ravet, Pune since 1998.
         </p>
 
