@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -150,15 +151,14 @@ export default function PackageAssistant() {
             <AlertDialogTitle>
                 {result ? "Our Recommendation For You" : "Oops!"}
             </AlertDialogTitle>
-            <AlertDialogDescription>
-              {result && (
-                <div className="space-y-4 pt-4">
+            <AlertDialogDescription asChild>
+              {result ? (
+                <div className="space-y-4 pt-4 text-sm text-muted-foreground">
                   <div className="font-bold text-lg text-primary">{result.recommendedPackage}</div>
                   <div>{result.justification}</div>
                 </div>
-              )}
-              {error && (
-                <div className="text-destructive">{error}</div>
+              ) : (
+                <div className="text-destructive pt-4">{error}</div>
               )}
             </AlertDialogDescription>
           </AlertDialogHeader>
