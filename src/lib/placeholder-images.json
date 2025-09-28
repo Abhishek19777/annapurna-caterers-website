@@ -159,6 +159,38 @@
       "imageHint": "marathi menu",
       "width": 720,
       "height": 1280
+    },
+    {
+      "id": "english-menu-1",
+      "description": "First page of the English food menu.",
+      "imageUrl": "https://i.ibb.co/TqKC6V7p/1.jpg",
+      "imageHint": "english menu",
+      "width": 720,
+      "height": 1280
+    },
+    {
+      "id": "english-menu-2",
+      "description": "Second page of the English food menu.",
+      "imageUrl": "https://i.ibb.co/PvzkHmXF/2.jpg",
+      "imageHint": "english menu",
+      "width": 720,
+      "height": 1280
+    },
+    {
+      "id": "english-menu-3",
+      "description": "Third page of the English food menu.",
+      "imageUrl": "https://i.ibb.co/rKgRyRM3/3.jpg",
+      "imageHint": "english menu",
+      "width": 720,
+      "height": 1280
+    },
+    {
+      "id": "english-menu-4",
+      "description": "Fourth page of the English food menu.",
+      "imageUrl": "https://i.ibb.co/BK6yPS9R/4.jpg",
+      "imageHint": "english menu",
+      "width": 720,
+      "height": 1280
     }
   ]
 }
