@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl sm:text-4xl font-headline text-accent mb-4">
-          Celebrating Food and Tradition Since 1998
+          Celebrating Food and Tradition Since 2006
         </h2>
         <div className="max-w-3xl mx-auto">
           <p className="text-lg text-muted-foreground leading-relaxed">

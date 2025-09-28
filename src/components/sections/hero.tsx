@@ -34,7 +34,7 @@ const Hero = () => {
           WELCOME TO SHREE OM ANNAPURNA CATERERS
         </motion.h1>
         <p className="mt-4 max-w-3xl text-lg md:text-xl lg:text-2xl drop-shadow-md">
-          Authentic Flavours, Unforgettable Events. The Leading Caterers in Ravet, Pune since 1998.
+          Authentic Flavours, Unforgettable Events. The Leading Caterers in Ravet, Pune since 2006.
         </p>
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-8 text-lg">

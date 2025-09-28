@@ -5,7 +5,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Annapurna Delight',
-  description: 'Authentic Flavours, Unforgettable Events. The Leading Caterers in Ravet, Pune since 1998.',
+  description: 'Authentic Flavours, Unforgettable Events. The Leading Caterers in Ravet, Pune since 2006.',
 };
 
 export default function RootLayout({
