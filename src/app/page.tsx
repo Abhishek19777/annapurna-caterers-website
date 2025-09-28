@@ -2,6 +2,7 @@ import Header from '@/components/layout/header';
 import Hero from '@/components/sections/hero';
 import About from '@/components/sections/about';
 import Packages from '@/components/sections/packages';
+import Menu from '@/components/sections/menu';
 import WhyChooseUs from '@/components/sections/why-choose-us';
 import Gallery from '@/components/sections/gallery';
 import Contact from '@/components/sections/contact';
@@ -19,6 +20,9 @@ export default function Home() {
         </AnimatedSection>
         <AnimatedSection>
           <Packages />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Menu />
         </AnimatedSection>
         <AnimatedSection>
           <WhyChooseUs />
