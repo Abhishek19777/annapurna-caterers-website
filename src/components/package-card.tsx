@@ -79,7 +79,7 @@ const PackageCard: React.FC<PackageCardProps> = ({ packageData }) => {
             <div className="grid gap-4 py-4">
               <div className="grid grid-cols-4 items-center gap-4">
                 <Label htmlFor="guests" className="text-right">
-                  Guests
+                  Number of guests
                 </Label>
                 <div className="col-span-3">
                   <Input id="guests" type="number" {...register('guests')} />
