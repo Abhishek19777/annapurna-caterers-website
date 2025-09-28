@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -8,7 +9,7 @@ const Hero = () => {
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-background');
 
   return (
-    <section id="home" className="relative h-[calc(100vh-4rem)] w-full">
+    <section id="home" className="relative h-[calc(100vh-8rem)] md:h-[calc(100vh-4rem)] w-full">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
