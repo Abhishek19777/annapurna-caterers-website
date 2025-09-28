@@ -8,11 +8,12 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogClose,
 } from '@/components/ui/dialog';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { Button } from './button';
-import { ZoomIn, ZoomOut, Search } from 'lucide-react';
+import { ZoomIn, ZoomOut, Search, X } from 'lucide-react';
 
 interface ImageDialogProps {
   imageUrl: string;
@@ -68,7 +69,13 @@ export function ImageDialog({ imageUrl, alt, children }: ImageDialogProps) {
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         ref={containerRef}
+        hideCloseButton={true}
       >
+        <DialogClose className="absolute -top-2 -right-2 z-50 rounded-full border border-white/50 bg-black/50 p-1 opacity-80 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+            <X className="h-6 w-6 text-white" />
+            <span className="sr-only">Close</span>
+        </DialogClose>
+
         <DialogHeader>
             <DialogTitle className="sr-only">{alt}</DialogTitle>
         </DialogHeader>
