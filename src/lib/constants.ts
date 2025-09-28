@@ -18,8 +18,8 @@ export const NAV_LINKS = [
 ];
 
 export const QUICK_STATS = [
-    { icon: Award, text: "25+ Years of Experience" },
-    { icon: PartyPopper, text: "5,000+ Events Served" },
+    { icon: Award, text: "19+ Years of Experience" },
+    { icon: PartyPopper, text: "4000+ Events Served" },
     { icon: Heart, text: "95% Repeat Customers" },
 ];
 
