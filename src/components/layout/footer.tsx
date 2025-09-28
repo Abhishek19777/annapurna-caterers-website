@@ -11,9 +11,6 @@ const Footer = () => {
         <p className="text-sm mt-1">
           {ADDRESS}
         </p>
-        <p className="text-xs mt-1">
-          Website designed by AI.
-        </p>
       </div>
     </footer>
   );
