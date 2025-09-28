@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
     <section id="why-choose-us" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-headline mb-4">
+          <h2 className="text-3xl sm:text-4xl font-headline mb-4">
             Why Choose Shree Om Annapurna Caterers?
           </h2>
         </div>

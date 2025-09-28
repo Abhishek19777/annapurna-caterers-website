@@ -49,7 +49,7 @@ const PackageCard: React.FC<PackageCardProps> = ({ packageData }) => {
     <>
       <Card className="flex flex-col bg-card hover:shadow-lg transition-shadow duration-300">
         <CardHeader>
-          <CardTitle className="font-headline text-2xl text-accent">{packageData.name}</CardTitle>
+          <CardTitle className="font-headline text-2xl sm:text-3xl text-accent">{packageData.name}</CardTitle>
         </CardHeader>
         <CardContent className="flex-grow">
           <ul className="space-y-3 text-muted-foreground">

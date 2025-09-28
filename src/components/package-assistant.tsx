@@ -81,13 +81,13 @@ export default function PackageAssistant() {
   }
 
   return (
-    <div id="ai-assistant" className="py-16 md:py-24 bg-background">
+    <div id="ai-assistant" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <Card className="max-w-3xl mx-auto bg-secondary border-primary/50 border-2">
           <CardHeader className="text-center">
             <div className="flex justify-center items-center gap-2 mb-2">
                 <Sparkles className="h-8 w-8 text-primary" />
-                <CardTitle className="text-3xl font-headline">AI Package Advisor</CardTitle>
+                <CardTitle className="text-2xl sm:text-3xl font-headline">AI Package Advisor</CardTitle>
             </div>
             <CardDescription className="text-lg">
               Not sure which package to choose? Let our AI assistant help you decide!
