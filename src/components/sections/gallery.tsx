@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -16,7 +17,7 @@ const Gallery = () => {
             A taste of the unforgettable experiences we help create.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
+        <div className="grid grid-cols-1 min-[360px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
           {galleryImages.map((image, index) => {
             const direction = index % 4 < 2 ? 'left' : 'right';
             return (

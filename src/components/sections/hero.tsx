@@ -41,16 +41,16 @@ const Hero = () => {
           {QUICK_STATS.map((stat, index) => (
             <div key={index} className="flex flex-col items-center gap-2">
               <stat.icon className="h-8 w-8 md:h-10 md:w-10 text-primary" />
-              <span className="font-semibold">{stat.text}</span>
+              <span className="font-semibold text-xs sm:text-base">{stat.text}</span>
             </div>
           ))}
         </div>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <Button asChild size="lg" variant="default">
+          <Button asChild size="default" className="sm:size-lg">
             <Link href="#packages">View Our Packages</Link>
           </Button>
-          <Button asChild size="lg" variant="secondary">
+          <Button asChild size="default" className="sm:size-lg" variant="secondary">
             <Link href="#contact">Find Us on Map</Link>
           </Button>
         </div>

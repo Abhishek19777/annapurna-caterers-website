@@ -77,8 +77,8 @@ const PackageCard: React.FC<PackageCardProps> = ({ packageData }) => {
           </DialogHeader>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid gap-4 py-4">
-              <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="guests" className="text-right">
+              <div className="space-y-2 sm:grid sm:grid-cols-4 sm:items-center sm:gap-4 sm:space-y-0">
+                <Label htmlFor="guests" className="text-left sm:text-right">
                   Number of guests
                 </Label>
                 <div className="col-span-3">
@@ -86,8 +86,8 @@ const PackageCard: React.FC<PackageCardProps> = ({ packageData }) => {
                   {errors.guests && <p className="text-red-500 text-sm mt-1">{errors.guests.message}</p>}
                 </div>
               </div>
-              <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="eventType" className="text-right">
+              <div className="space-y-2 sm:grid sm:grid-cols-4 sm:items-center sm:gap-4 sm:space-y-0">
+                <Label htmlFor="eventType" className="text-left sm:text-right">
                   Event Type
                 </Label>
                 <div className="col-span-3">
