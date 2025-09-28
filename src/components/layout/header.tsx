@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, UtensilsCrossed } from 'lucide-react';
@@ -28,10 +29,15 @@ const Header = () => {
   const linkColor = isScrolled ? "text-foreground" : "text-white";
 
   return (
-    <header className={cn(
-      "sticky top-0 z-50 w-full transition-all duration-300",
-      isScrolled ? "border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "bg-transparent"
-    )}>
+    <motion.header 
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className={cn(
+        "sticky top-0 z-50 w-full transition-all duration-300",
+        isScrolled ? "border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "bg-transparent"
+      )}
+    >
       <div className="container flex h-20 items-center">
         <div className="mr-auto flex items-center">
           <Link href="/" className="flex items-center gap-2 font-bold">
@@ -93,7 +99,7 @@ const Header = () => {
           </Sheet>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 
