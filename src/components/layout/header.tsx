@@ -13,6 +13,7 @@ import { cn } from '@/lib/utils';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [hoveredLink, setHoveredLink] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +27,7 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isScrolled]);
 
-  const linkColor = "text-foreground";
+  const linkColor = isScrolled ? "text-foreground" : "text-foreground";
 
   return (
     <motion.header 
@@ -47,13 +48,24 @@ const Header = () => {
             </span>
           </Link>
         </div>
-        <nav className="hidden items-center space-x-8 text-base font-medium md:flex">
+        <nav className="hidden items-center space-x-2 text-base font-medium md:flex">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={cn("transition-colors hover:text-primary", linkColor)}
+              onMouseEnter={() => setHoveredLink(link.href)}
+              onMouseLeave={() => setHoveredLink('')}
+              className={cn("relative rounded-md px-3 py-2 transition-colors", linkColor)}
             >
+              {hoveredLink === link.href && (
+                <motion.span
+                  layoutId="hover-bg"
+                  className="absolute inset-0 -z-10 rounded-md bg-accent/10"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                />
+              )}
               {link.label}
             </Link>
           ))}
@@ -64,7 +76,7 @@ const Header = () => {
           </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
-              <Button variant="outline" size="icon">
+              <Button variant="outline" size="icon" className={cn(!isScrolled && "border-primary/50 text-foreground")}>
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Open Menu</span>
               </Button>
