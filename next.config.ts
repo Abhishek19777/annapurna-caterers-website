@@ -42,9 +42,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  serverActions: {
-    bodySizeLimit: '4.5mb',
-    maxDuration: 30,
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '4.5mb',
+      maxDuration: 30,
+    },
   },
 };
 
