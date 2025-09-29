@@ -2,6 +2,9 @@
 # https://firebase.google.com/docs/app-hosting/configure
 
 runConfig:
-  # Increase this value if you'd like to automatically spin up
-  # more instances in response to increased traffic.
-  maxInstances: 1
+  # Set a higher timeout to accommodate server-side rendering and AI flows.
+  timeoutSeconds: 60
+  # Increase this value to automatically spin up more instances for traffic.
+  maxInstances: 10
+  # Keep at least one instance running to reduce cold starts.
+  minInstances: 1
