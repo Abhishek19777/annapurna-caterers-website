@@ -1,13 +1,15 @@
+
 import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster"
 import CustomCursor from '@/components/ui/custom-cursor';
 import './globals.css';
 import { PHONE_NUMBER, ADDRESS, GOOGLE_MAPS_LINK } from '@/lib/constants';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://your-domain.com';
+const siteUrl = 'https://shreeomannapurna.com';
 const title = 'Annapurna Delight - Top Caterers in Ravet, Pune';
 const description = 'Authentic Flavours, Unforgettable Events. The Leading Caterers in Ravet, Pune since 2006. Specializing in wedding, corporate, and party catering with authentic Indian cuisine.';
 const heroImageUrl = `https://i.ibb.co/LhYyzvr5/A-lavish-Indian-food-buffet-setup-for-a-celebration.jpg`;
+const logoUrl = 'https://i.ibb.co/hFVdCxhw/Catering-Logo-with-Traditional-Thali-Icon.png';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -68,6 +70,7 @@ const jsonLd = {
   '@type': 'LocalBusiness',
   name: 'Shree Om Annapurna Caterers',
   image: heroImageUrl,
+  logo: logoUrl,
   '@id': siteUrl,
   url: siteUrl,
   telephone: PHONE_NUMBER,
@@ -96,8 +99,8 @@ const jsonLd = {
       'Saturday',
       'Sunday',
     ],
-    opens: '00:00',
-    closes: '23:59',
+    opens: '08:00',
+    closes: '22:00',
   },
   sameAs: [GOOGLE_MAPS_LINK],
 };
