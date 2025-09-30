@@ -54,7 +54,7 @@ const Contact = () => {
           <div className="flex flex-col gap-4">
             <div className="rounded-lg overflow-hidden shadow-lg h-64 md:h-80 lg:h-96">
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.4594519573404!2d73.7642944751939!3d18.6430931824795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9c7682f1943%3A0x6b45a7095c27f670!2sShree%20Om%20Annapurna%20Caterers!5e0!3m2!1sen!2sin!4v1727589255893!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d397.3107472310595!2d73.73696598303616!3d18.6694635795924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b1cb9f862f5b%3A0x36daca8aa3e8f4c6!2sShree%20Om%20Annapurna%20Caterers!5e0!3m2!1sen!2sin!4v1759243080133!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
