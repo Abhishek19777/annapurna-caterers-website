@@ -9,7 +9,7 @@ const siteUrl = 'https://shreeomannapurna.com';
 const title = 'Shree Om Annapurna Caterers - Top Caterers in Ravet, Pune';
 const description = 'Authentic Flavours, Unforgettable Events. The Leading Caterers in Ravet, Pune since 2006. Specializing in wedding, corporate, and party catering with authentic Indian cuisine.';
 const heroImageUrl = `https://i.ibb.co/LhYyzvr5/A-lavish-Indian-food-buffet-setup-for-a-celebration.jpg`;
-const logoUrl = 'https://i.ibb.co/hFVdCxhw/Catering-Logo-with-Traditional-Thali-Icon.png';
+const logoUrl = 'https://i.ibb.co/nsZTRydG/Screenshot-2025-09-30-205818-Edited.png';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
