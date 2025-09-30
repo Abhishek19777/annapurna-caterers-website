@@ -3,10 +3,11 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, UtensilsCrossed } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { WHATSAPP_BOOK_NOW_LINK, NAV_LINKS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 
@@ -42,8 +43,8 @@ const Header = () => {
       <div className="container flex h-16 items-center">
         <div className="mr-auto flex items-center">
           <Link href="/" className="flex items-center gap-2 font-bold">
-            <UtensilsCrossed className="h-7 w-7 text-primary" />
-            <span className={cn("font-headline text-lg md:text-2xl", linkColor)}>
+            <Image src="https://i.ibb.co/hFVdCxhw/Catering-Logo-with-Traditional-Thali-Icon.png" alt="Shree Om Annapurna Caterers Logo" width={40} height={40} className="h-8 w-8 md:h-10 md:w-10" />
+            <span className={cn("font-headline text-base md:text-xl", linkColor)}>
               Shree Om Annapurna
             </span>
           </Link>
@@ -85,7 +86,7 @@ const Header = () => {
               <div className="flex flex-col h-full">
                 <div className="mb-8">
                   <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsOpen(false)}>
-                    <UtensilsCrossed className="h-6 w-6 text-primary" />
+                    <Image src="https://i.ibb.co/hFVdCxhw/Catering-Logo-with-Traditional-Thali-Icon.png" alt="Shree Om Annapurna Caterers Logo" width={32} height={32} />
                     <span className="font-headline text-lg">Shree Om Annapurna</span>
                   </Link>
                 </div>

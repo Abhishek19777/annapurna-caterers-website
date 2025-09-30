@@ -6,7 +6,7 @@ import './globals.css';
 import { PHONE_NUMBER, ADDRESS, GOOGLE_MAPS_LINK } from '@/lib/constants';
 
 const siteUrl = 'https://shreeomannapurna.com';
-const title = 'Annapurna Delight - Top Caterers in Ravet, Pune';
+const title = 'Shree Om Annapurna Caterers - Top Caterers in Ravet, Pune';
 const description = 'Authentic Flavours, Unforgettable Events. The Leading Caterers in Ravet, Pune since 2006. Specializing in wedding, corporate, and party catering with authentic Indian cuisine.';
 const heroImageUrl = `https://i.ibb.co/LhYyzvr5/A-lavish-Indian-food-buffet-setup-for-a-celebration.jpg`;
 const logoUrl = 'https://i.ibb.co/hFVdCxhw/Catering-Logo-with-Traditional-Thali-Icon.png';
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     'wedding caterers Pune',
     'corporate event catering Pune',
     'party caterers in Pimpri-Chinchwad',
-    'Annapurna Delight caterers',
+    'Shree Om Annapurna Caterers',
     'authentic Indian catering',
     'Maharashtrian food catering',
     'event catering services',
