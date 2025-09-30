@@ -43,7 +43,7 @@ const Header = () => {
       <div className="container flex h-16 items-center">
         <div className="mr-auto flex items-center">
           <Link href="/" className="flex items-center gap-2 font-bold">
-            <UtensilsCrossed className={cn("h-8 w-8 md:h-10 md:w-10", linkColor)} />
+            <UtensilsCrossed className="h-8 w-8 md:h-10 md:w-10 text-primary" />
             <span className={cn("font-headline text-base md:text-xl", linkColor)}>
               Shree Om Annapurna
             </span>
@@ -86,7 +86,7 @@ const Header = () => {
               <div className="flex flex-col h-full">
                 <div className="mb-8">
                   <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsOpen(false)}>
-                    <UtensilsCrossed className="h-8 w-8" />
+                    <UtensilsCrossed className="h-8 w-8 text-primary" />
                     <span className="font-headline text-lg">Shree Om Annapurna</span>
                   </Link>
                 </div>
