@@ -44,7 +44,7 @@ const Header = () => {
         <div className="mr-auto flex items-center">
           <Link href="/" className="flex items-center gap-2 font-bold">
             <UtensilsCrossed className="h-8 w-8 md:h-10 md:w-10 text-primary" />
-            <span className={cn("font-headline text-base md:text-xl", linkColor)}>
+            <span className={cn("font-script text-2xl md:text-3xl", linkColor)}>
               Shree Om Annapurna
             </span>
           </Link>
@@ -87,7 +87,7 @@ const Header = () => {
                 <div className="mb-8">
                   <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsOpen(false)}>
                     <UtensilsCrossed className="h-8 w-8 text-primary" />
-                    <span className="font-headline text-lg">Shree Om Annapurna</span>
+                    <span className="font-script text-2xl">Shree Om Annapurna</span>
                   </Link>
                 </div>
                 <nav className="flex flex-col space-y-4 text-lg">
