@@ -11,9 +11,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Lato', 'sans-serif'],
-        headline: ['Playfair Display', 'serif'],
-        script: ['Dancing Script', 'cursive'],
+        body: ['var(--font-lato)', 'sans-serif'],
+        headline: ['var(--font-playfair-display)', 'serif'],
+        script: ['var(--font-dancing-script)', 'cursive'],
         code: ['monospace'],
       },
       colors: {

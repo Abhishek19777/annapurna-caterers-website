@@ -4,6 +4,8 @@ import { Toaster } from "@/components/ui/toaster"
 import CustomCursor from '@/components/ui/custom-cursor';
 import './globals.css';
 import { PHONE_NUMBER, ADDRESS, GOOGLE_MAPS_LINK } from '@/lib/constants';
+import { lato, playfair_display, dancing_script } from './fonts';
+import { cn } from '@/lib/utils';
 
 const siteUrl = 'https://shreeomannapurna.com';
 const title = 'Shree Om Annapurna Caterers - Top Caterers in Ravet, Pune';
@@ -117,15 +119,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-body antialiased">
+      <body className={cn(
+          "font-body antialiased",
+          lato.variable,
+          playfair_display.variable,
+          dancing_script.variable
+        )}>
         <CustomCursor />
         {children}
         <Toaster />
