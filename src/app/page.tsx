@@ -1,3 +1,4 @@
+
 import Header from '@/components/layout/header';
 import Hero from '@/components/sections/hero';
 import Footer from '@/components/layout/footer';
@@ -9,6 +10,7 @@ const Packages = dynamic(() => import('@/components/sections/packages'));
 const Menu = dynamic(() => import('@/components/sections/menu'));
 const WhyChooseUs = dynamic(() => import('@/components/sections/why-choose-us'));
 const Gallery = dynamic(() => import('@/components/sections/gallery'));
+const Videos = dynamic(() => import('@/components/sections/videos'));
 const Contact = dynamic(() => import('@/components/sections/contact'));
 
 
@@ -32,6 +34,9 @@ export default function Home() {
         </AnimatedSection>
         <AnimatedSection>
           <Gallery />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Videos />
         </AnimatedSection>
         <AnimatedSection>
           <Contact />

@@ -76,3 +76,8 @@ export const TESTIMONIALS = [
     { name: "Rohan M.", event: "Corporate Event", quote: "Shree Om Annapurna Caterers handled our corporate lunch perfectly. Punctual, professional, and delicious food. They made our event a huge success." },
     { name: "Anjali D.", event: "Birthday Party", quote: "From the starters to the dessert, everything was perfect. It felt like a home-cooked meal, but with the elegance of professional catering. Thank you for making the day special." },
 ];
+
+export const VIDEOS = [
+  { videoId: "dQw4w9WgXcQ", title: "A Taste of Our Catering Excellence" },
+  { videoId: "3tmd-ClafbY", title: "Behind the Scenes: A Wedding Feast" },
+];
