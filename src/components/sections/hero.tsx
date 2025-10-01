@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="mt-8 grid grid-cols-3 gap-4 md:gap-8 text-sm md:text-lg">
           {QUICK_STATS.map((stat, index) => (
             <div key={index} className="flex flex-col items-center gap-2">
-              <stat.icon className="h-8 w-8 md:h-10 md:w-10 text-primary" />
+              <stat.icon className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-primary" />
               <span className="font-semibold text-xs sm:text-base">{stat.text}</span>
             </div>
           ))}

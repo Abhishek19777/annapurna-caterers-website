@@ -1,3 +1,4 @@
+
 import React from 'react';
 import TestimonialCard from '@/components/testimonial-card';
 import { WHY_CHOOSE_US_POINTS, TESTIMONIALS } from '@/lib/constants';
@@ -13,7 +14,7 @@ const WhyChooseUs = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 md:mb-16">
           {WHY_CHOOSE_US_POINTS.map((point, index) => (
             <div key={index} className="text-center">
               <div className="flex justify-center mb-4">
