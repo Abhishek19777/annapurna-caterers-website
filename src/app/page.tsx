@@ -1,13 +1,16 @@
 import Header from '@/components/layout/header';
 import Hero from '@/components/sections/hero';
-import About from '@/components/sections/about';
-import Packages from '@/components/sections/packages';
-import Menu from '@/components/sections/menu';
-import WhyChooseUs from '@/components/sections/why-choose-us';
-import Gallery from '@/components/sections/gallery';
-import Contact from '@/components/sections/contact';
 import Footer from '@/components/layout/footer';
 import AnimatedSection from '@/components/ui/animated-section';
+import dynamic from 'next/dynamic';
+
+const About = dynamic(() => import('@/components/sections/about'));
+const Packages = dynamic(() => import('@/components/sections/packages'));
+const Menu = dynamic(() => import('@/components/sections/menu'));
+const WhyChooseUs = dynamic(() => import('@/components/sections/why-choose-us'));
+const Gallery = dynamic(() => import('@/components/sections/gallery'));
+const Contact = dynamic(() => import('@/components/sections/contact'));
+
 
 export default function Home() {
   return (
