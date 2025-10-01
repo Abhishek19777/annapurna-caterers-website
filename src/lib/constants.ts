@@ -78,6 +78,5 @@ export const TESTIMONIALS = [
 ];
 
 export const VIDEOS = [
-  { videoId: "dQw4w9WgXcQ", title: "A Taste of Our Catering Excellence" },
-  { videoId: "3tmd-ClafbY", title: "Behind the Scenes: A Wedding Feast" },
+  { videoId: "XhSAwUDw1S8", title: "Our Catering Service in Action" }
 ];
