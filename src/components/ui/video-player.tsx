@@ -13,7 +13,7 @@ interface VideoPlayerProps {
 
 export default function VideoPlayer({ videoId, title }: VideoPlayerProps) {
   const [isPlayed, setIsPlayed] = useState(false);
-  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
 
   const handlePlay = () => {
     setIsPlayed(true);
