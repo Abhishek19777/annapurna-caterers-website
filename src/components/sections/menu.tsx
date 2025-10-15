@@ -1,10 +1,9 @@
 
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ImageDialog } from '@/components/ui/image-dialog';
 
@@ -30,19 +29,16 @@ const Menu = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-8">
               {marathiImages.map((image) => (
                 <ImageDialog key={image.id} imageUrl={image.imageUrl} alt={image.description}>
-                  <Card className="overflow-hidden group cursor-zoom-in">
-                    <div className="relative w-full aspect-[9/16]">
-                      <Image
-                        src={image.imageUrl}
-                        alt={image.description}
-                        width={image.width}
-                        height={image.height}
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-contain w-full h-full transform transition-transform duration-300 group-hover:scale-105"
-                        data-ai-hint={image.imageHint}
-                      />
-                    </div>
-                  </Card>
+                  <div className="overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm transition-shadow hover:shadow-lg cursor-zoom-in">
+                    <Image
+                      src={image.imageUrl}
+                      alt={image.description}
+                      width={image.width}
+                      height={image.height}
+                      className="object-contain w-full h-auto"
+                      data-ai-hint={image.imageHint}
+                    />
+                  </div>
                 </ImageDialog>
               ))}
             </div>
@@ -50,20 +46,17 @@ const Menu = () => {
           <TabsContent value="english">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-8">
               {englishImages.map((image) => (
-                 <ImageDialog key={image.id} imageUrl={image.imageUrl} alt={image.description}>
-                  <Card className="overflow-hidden group cursor-zoom-in">
-                    <div className="relative w-full aspect-[9/16]">
-                      <Image
-                        src={image.imageUrl}
-                        alt={image.description}
-                        width={image.width}
-                        height={image.height}
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-contain w-full h-full transform transition-transform duration-300 group-hover:scale-105"
-                        data-ai-hint={image.imageHint}
-                      />
-                    </div>
-                  </Card>
+                <ImageDialog key={image.id} imageUrl={image.imageUrl} alt={image.description}>
+                   <div className="overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm transition-shadow hover:shadow-lg cursor-zoom-in">
+                    <Image
+                      src={image.imageUrl}
+                      alt={image.description}
+                      width={image.width}
+                      height={image.height}
+                      className="object-contain w-full h-auto"
+                      data-ai-hint={image.imageHint}
+                    />
+                  </div>
                 </ImageDialog>
               ))}
             </div>

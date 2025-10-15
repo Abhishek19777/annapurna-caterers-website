@@ -11,9 +11,8 @@ import {
   DialogClose,
 } from '@/components/ui/dialog';
 import Image from 'next/image';
-import { cn } from '@/lib/utils';
 import { Button } from './button';
-import { ZoomIn, ZoomOut, Search, X } from 'lucide-react';
+import { ZoomIn, ZoomOut, X } from 'lucide-react';
 
 interface ImageDialogProps {
   imageUrl: string;
