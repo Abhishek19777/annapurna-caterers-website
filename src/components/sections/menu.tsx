@@ -36,6 +36,7 @@ const Menu = () => {
                       fill
                       className="object-contain"
                       data-ai-hint={image.imageHint}
+                      unoptimized
                     />
                   </div>
                 </ImageDialog>
@@ -53,6 +54,7 @@ const Menu = () => {
                       fill
                       className="object-contain"
                       data-ai-hint={image.imageHint}
+                      unoptimized
                     />
                   </div>
                 </ImageDialog>
