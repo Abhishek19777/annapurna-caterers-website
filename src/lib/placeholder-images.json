@@ -147,7 +147,7 @@
     {
       "id": "marathi-menu-1",
       "description": "First page of the Marathi food menu.",
-      "imageUrl": "/images/menu/marathi-1.jpg",
+      "imageUrl": "/images/menu/marathi1.jpg",
       "imageHint": "marathi menu",
       "width": 720,
       "height": 1280
@@ -155,7 +155,7 @@
     {
       "id": "marathi-menu-2",
       "description": "Second page of the Marathi food menu.",
-      "imageUrl": "/images/menu/marathi-2.jpg",
+      "imageUrl": "/images/menu/marath2.jpg",
       "imageHint": "marathi menu",
       "width": 720,
       "height": 1280
@@ -163,7 +163,7 @@
     {
       "id": "english-menu-1",
       "description": "First page of the English food menu.",
-      "imageUrl": "/images/menu/english-1.jpg",
+      "imageUrl": "/images/menu/1.jpg",
       "imageHint": "english menu",
       "width": 720,
       "height": 1280
@@ -171,7 +171,7 @@
     {
       "id": "english-menu-2",
       "description": "Second page of the English food menu.",
-      "imageUrl": "/images/menu/english-2.jpg",
+      "imageUrl": "/images/menu/2.jpg",
       "imageHint": "english menu",
       "width": 720,
       "height": 1280
@@ -179,7 +179,7 @@
     {
       "id": "english-menu-3",
       "description": "Third page of the English food menu.",
-      "imageUrl": "/images/menu/english-3.jpg",
+      "imageUrl": "/images/menu/3.jpg",
       "imageHint": "english menu",
       "width": 720,
       "height": 1280
@@ -187,7 +187,7 @@
     {
       "id": "english-menu-4",
       "description": "Fourth page of the English food menu.",
-      "imageUrl": "/images/menu/english-4.jpg",
+      "imageUrl": "/images/menu/4.jpg",
       "imageHint": "english menu",
       "width": 720,
       "height": 1280
