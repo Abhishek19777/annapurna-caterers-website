@@ -146,16 +146,16 @@
     },
     {
       "id": "marathi-menu-1",
-      "description": "Second page of the Marathi food menu.",
-      "imageUrl": "/images/menu/marathi-2.jpg",
+      "description": "First page of the Marathi food menu.",
+      "imageUrl": "/images/menu/marathi-1.jpg",
       "imageHint": "marathi menu",
       "width": 720,
       "height": 1280
     },
     {
       "id": "marathi-menu-2",
-      "description": "First page of the Marathi food menu.",
-      "imageUrl": "/images/menu/marathi-1.jpg",
+      "description": "Second page of the Marathi food menu.",
+      "imageUrl": "/images/menu/marathi-2.jpg",
       "imageHint": "marathi menu",
       "width": 720,
       "height": 1280
