@@ -31,7 +31,6 @@ const Gallery = () => {
                       height={image.height}
                       className="object-cover w-full h-full transform transition-transform duration-300 group-hover:scale-105"
                       data-ai-hint={image.imageHint}
-                      unoptimized
                     />
                   </div>
                 </Card>

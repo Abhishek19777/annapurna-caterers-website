@@ -21,7 +21,6 @@ const Hero = () => {
           className="object-cover"
           data-ai-hint={heroImage.imageHint}
           priority
-          unoptimized
         />
       )}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30" />
