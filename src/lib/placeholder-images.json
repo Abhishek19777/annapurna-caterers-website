@@ -3,7 +3,7 @@
     {
       "id": "hero-background",
       "description": "A lavish Indian food buffet setup for a celebration.",
-      "imageUrl": "https://picsum.photos/seed/hero/1920/1280",
+      "imageUrl": "/images/hero/hero-background.jpg",
       "imageHint": "indian catering",
       "width": 1920,
       "height": 1280
@@ -11,7 +11,7 @@
     {
       "id": "gallery-1",
       "description": "Buffet setup for a wedding.",
-      "imageUrl": "https://picsum.photos/seed/gallery1/1024/768",
+      "imageUrl": "/images/gallery/gallery-1.jpg",
       "imageHint": "wedding buffet",
       "width": 1024,
       "height": 768
@@ -19,7 +19,7 @@
     {
       "id": "gallery-2",
       "description": "Close-up of paneer tikka.",
-      "imageUrl": "https://picsum.photos/seed/gallery2/1024/768",
+      "imageUrl": "/images/gallery/gallery-2.jpg",
       "imageHint": "paneer tikka",
       "width": 1024,
       "height": 768
@@ -27,7 +27,7 @@
     {
       "id": "gallery-3",
       "description": "Vibrant chaat counter at an event.",
-      "imageUrl": "https://picsum.photos/seed/gallery3/1024/768",
+      "imageUrl": "/images/gallery/gallery-3.jpg",
       "imageHint": "chaat counter",
       "width": 1024,
       "height": 768
@@ -35,7 +35,7 @@
     {
       "id": "gallery-4",
       "description": "Assortment of Indian sweets.",
-      "imageUrl": "https://picsum.photos/seed/gallery4/1024/768",
+      "imageUrl": "/images/gallery/gallery-4.jpg",
       "imageHint": "indian sweets",
       "width": 1024,
       "height": 768
@@ -43,7 +43,7 @@
     {
       "id": "gallery-5",
       "description": "Professional catering staff serving guests.",
-      "imageUrl": "https://picsum.photos/seed/gallery5/1024/768",
+      "imageUrl": "/images/gallery/gallery-5.jpg",
       "imageHint": "catering staff",
       "width": 1024,
       "height": 768
@@ -51,7 +51,7 @@
     {
       "id": "gallery-6",
       "description": "Elegant table setting for a corporate event.",
-      "imageUrl": "https://picsum.photos/seed/gallery6/1024/768",
+      "imageUrl": "/images/gallery/gallery-6.jpg",
       "imageHint": "event dining",
       "width": 1024,
       "height": 768
@@ -59,7 +59,7 @@
     {
       "id": "gallery-7",
       "description": "Freshly made puris.",
-      "imageUrl": "https://picsum.photos/seed/gallery7/1024/768",
+      "imageUrl": "/images/gallery/gallery-7.jpg",
       "imageHint": "indian food",
       "width": 1024,
       "height": 768
@@ -67,7 +67,7 @@
     {
       "id": "gallery-8",
       "description": "A colorful display of salads and appetizers.",
-      "imageUrl": "https://picsum.photos/seed/gallery8/1024/768",
+      "imageUrl": "/images/gallery/gallery-8.jpg",
       "imageHint": "salad bar",
       "width": 1024,
       "height": 768
@@ -75,7 +75,7 @@
     {
       "id": "gallery-9",
       "description": "A catering display with various dishes.",
-      "imageUrl": "https://picsum.photos/seed/gallery9/1024/768",
+      "imageUrl": "/images/gallery/gallery-9.jpg",
       "imageHint": "catering display",
       "width": 1024,
       "height": 768
@@ -83,7 +83,7 @@
     {
       "id": "gallery-10",
       "description": "Indian sweets and desserts.",
-      "imageUrl": "https://picsum.photos/seed/gallery10/1024/768",
+      "imageUrl": "/images/gallery/gallery-10.jpg",
       "imageHint": "indian desserts",
       "width": 1024,
       "height": 768
@@ -91,7 +91,7 @@
     {
       "id": "gallery-11",
       "description": "A serving of a main course.",
-      "imageUrl": "https://picsum.photos/seed/gallery11/1024/768",
+      "imageUrl": "/images/gallery/gallery-11.jpg",
       "imageHint": "indian maincourse",
       "width": 1024,
       "height": 768
@@ -99,7 +99,7 @@
     {
       "id": "gallery-12",
       "description": "Guests being served at an event.",
-      "imageUrl": "https://picsum.photos/seed/gallery12/1024/768",
+      "imageUrl": "/images/gallery/gallery-12.jpg",
       "imageHint": "event catering",
       "width": 1024,
       "height": 768
@@ -107,7 +107,7 @@
     {
       "id": "gallery-13",
       "description": "Food preparation for a large event.",
-      "imageUrl": "https://picsum.photos/seed/gallery13/1024/768",
+      "imageUrl": "/images/gallery/gallery-13.jpg",
       "imageHint": "food preparation",
       "width": 1024,
       "height": 768
@@ -115,7 +115,7 @@
     {
       "id": "gallery-14",
       "description": "Cooking in a large pot.",
-      "imageUrl": "https://picsum.photos/seed/gallery14/1024/768",
+      "imageUrl": "/images/gallery/gallery-14.jpg",
       "imageHint": "large cooking",
       "width": 1024,
       "height": 768
@@ -123,7 +123,7 @@
     {
       "id": "gallery-15",
       "description": "Display of delicious food items.",
-      "imageUrl": "https://picsum.photos/seed/gallery15/1024/768",
+      "imageUrl": "/images/gallery/gallery-15.jpg",
       "imageHint": "food display",
       "width": 1024,
       "height": 768
@@ -131,7 +131,7 @@
     {
       "id": "gallery-16",
       "description": "Serving food to guests.",
-      "imageUrl": "https://picsum.photos/seed/gallery16/1024/768",
+      "imageUrl": "/images/gallery/gallery-16.jpg",
       "imageHint": "serving food",
       "width": 1024,
       "height": 768
@@ -139,7 +139,7 @@
     {
       "id": "gallery-17",
       "description": "Catered food line.",
-      "imageUrl": "https://picsum.photos/seed/gallery17/1024/768",
+      "imageUrl": "/images/gallery/gallery-17.jpg",
       "imageHint": "catering line",
       "width": 1024,
       "height": 768
@@ -147,7 +147,7 @@
     {
       "id": "marathi-menu-1",
       "description": "First page of the Marathi food menu.",
-      "imageUrl": "https://picsum.photos/seed/marathi1/720/1280",
+      "imageUrl": "/images/menu/marathi-1.jpg",
       "imageHint": "marathi menu",
       "width": 720,
       "height": 1280
@@ -155,7 +155,7 @@
     {
       "id": "marathi-menu-2",
       "description": "Second page of the Marathi food menu.",
-      "imageUrl": "https://picsum.photos/seed/marath2/720/1280",
+      "imageUrl": "/images/menu/marathi-2.jpg",
       "imageHint": "marathi menu",
       "width": 720,
       "height": 1280
@@ -163,7 +163,7 @@
     {
       "id": "english-menu-1",
       "description": "First page of the English food menu.",
-      "imageUrl": "https://picsum.photos/seed/1/720/1280",
+      "imageUrl": "/images/menu/english-1.jpg",
       "imageHint": "english menu",
       "width": 720,
       "height": 1280
@@ -171,7 +171,7 @@
     {
       "id": "english-menu-2",
       "description": "Second page of the English food menu.",
-      "imageUrl": "https://picsum.photos/seed/2/720/1280",
+      "imageUrl": "/images/menu/english-2.jpg",
       "imageHint": "english menu",
       "width": 720,
       "height": 1280
@@ -179,7 +179,7 @@
     {
       "id": "english-menu-3",
       "description": "Third page of the English food menu.",
-      "imageUrl": "https://picsum.photos/seed/3/720/1280",
+      "imageUrl": "/images/menu/english-3.jpg",
       "imageHint": "english menu",
       "width": 720,
       "height": 1280
@@ -187,7 +187,7 @@
     {
       "id": "english-menu-4",
       "description": "Fourth page of the English food menu.",
-      "imageUrl": "https://picsum.photos/seed/4/720/1280",
+      "imageUrl": "/images/menu/english-4.jpg",
       "imageHint": "english menu",
       "width": 720,
       "height": 1280
