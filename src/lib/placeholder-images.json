@@ -137,14 +137,6 @@
       "height": 768
     },
     {
-      "id": "gallery-17",
-      "description": "Catered food line.",
-      "imageUrl": "/images/gallery/gallery-17.jpg",
-      "imageHint": "catering line",
-      "width": 1024,
-      "height": 768
-    },
-    {
       "id": "marathi-menu-1",
       "description": "First page of the Marathi food menu.",
       "imageUrl": "/images/menu/marathi-menu-1.jpg",
