@@ -29,13 +29,12 @@ const Menu = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-8">
               {marathiImages.map((image) => (
                 <ImageDialog key={image.id} imageUrl={image.imageUrl} alt={image.description}>
-                  <div className="overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm transition-shadow hover:shadow-lg cursor-zoom-in">
+                  <div className="relative aspect-[9/16] w-full overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm transition-shadow hover:shadow-lg cursor-zoom-in">
                     <Image
                       src={image.imageUrl}
                       alt={image.description}
-                      width={image.width}
-                      height={image.height}
-                      className="object-contain w-full h-auto"
+                      fill
+                      className="object-contain"
                       data-ai-hint={image.imageHint}
                     />
                   </div>
@@ -47,13 +46,12 @@ const Menu = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-8">
               {englishImages.map((image) => (
                 <ImageDialog key={image.id} imageUrl={image.imageUrl} alt={image.description}>
-                   <div className="overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm transition-shadow hover:shadow-lg cursor-zoom-in">
+                  <div className="relative aspect-[9/16] w-full overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm transition-shadow hover:shadow-lg cursor-zoom-in">
                     <Image
                       src={image.imageUrl}
                       alt={image.description}
-                      width={image.width}
-                      height={image.height}
-                      className="object-contain w-full h-auto"
+                      fill
+                      className="object-contain"
                       data-ai-hint={image.imageHint}
                     />
                   </div>

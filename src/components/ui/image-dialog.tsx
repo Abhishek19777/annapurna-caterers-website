@@ -1,7 +1,7 @@
 
 'use client';
 
-import React, { useState, useRef, MouseEvent } from 'react';
+import React, { useState, useRef, MouseEvent, cloneElement, Children } from 'react';
 import {
   Dialog,
   DialogContent,
@@ -17,14 +17,14 @@ import { ZoomIn, ZoomOut, X } from 'lucide-react';
 interface ImageDialogProps {
   imageUrl: string;
   alt: string;
-  children: React.ReactNode;
+  children: React.ReactElement;
 }
 
 export function ImageDialog({ imageUrl, alt, children }: ImageDialogProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [scale, setScale] = useState(1);
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const imageRef = useRef<HTMLImageElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleZoomIn = () => setScale(prev => Math.min(prev * 1.2, 3));
@@ -44,10 +44,9 @@ export function ImageDialog({ imageUrl, alt, children }: ImageDialogProps) {
 
     setPosition({ x, y });
   };
-  
+
   const handleMouseLeave = () => {
     // Optional: Reset position when mouse leaves
-    // setPosition({ x: 0, y: 0 });
   };
 
   const resetZoom = () => {
@@ -62,15 +61,17 @@ export function ImageDialog({ imageUrl, alt, children }: ImageDialogProps) {
         resetZoom();
       }
     }}>
-      <DialogTrigger asChild>{children}</DialogTrigger>
+      <DialogTrigger asChild>
+        {cloneElement(Children.only(children))}
+      </DialogTrigger>
       <DialogContent 
-        className="max-w-4xl w-full h-[90vh] p-0 border-0 flex flex-col items-center justify-center bg-transparent"
+        className="max-w-4xl w-full h-[90vh] p-0 border-0 flex flex-col items-center justify-center bg-black/80"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         ref={containerRef}
         hideCloseButton={true}
       >
-        <DialogClose className="absolute -top-2 -right-2 z-50 rounded-full border border-white/50 bg-black/50 p-1 opacity-80 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+        <DialogClose className="absolute top-2 right-2 z-50 rounded-full border border-white/50 bg-black/50 p-1 opacity-80 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
             <X className="h-6 w-6 text-white" />
             <span className="sr-only">Close</span>
         </DialogClose>
@@ -78,17 +79,20 @@ export function ImageDialog({ imageUrl, alt, children }: ImageDialogProps) {
         <DialogHeader>
             <DialogTitle className="sr-only">{alt}</DialogTitle>
         </DialogHeader>
-        <div className="relative w-full h-full overflow-hidden">
+        <div 
+          ref={imageRef}
+          className="relative w-full h-full overflow-hidden"
+          style={{
+            transform: `scale(${scale}) translate(${position.x}px, ${position.y}px)`,
+            cursor: scale > 1 ? 'grab' : 'auto',
+            transition: 'transform 0.3s ease-out'
+          }}
+        >
             <Image
-                ref={imageRef}
                 src={imageUrl}
                 alt={alt}
                 fill
-                className="object-contain transition-transform duration-300"
-                style={{
-                  transform: `scale(${scale}) translate(${position.x}px, ${position.y}px)`,
-                  cursor: scale > 1 ? 'grab' : 'auto',
-                }}
+                className="object-contain"
             />
         </div>
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-background/80 backdrop-blur-sm p-2 rounded-lg shadow-lg">
