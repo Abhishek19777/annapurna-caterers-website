@@ -6,6 +6,7 @@ import './globals.css';
 import { PHONE_NUMBER, ADDRESS, GOOGLE_MAPS_LINK } from '@/lib/constants';
 import { lato, playfair_display, dancing_script } from './fonts';
 import { cn } from '@/lib/utils';
+import Analytics from '@/components/analytics';
 
 const siteUrl = 'https://shreeomannapurna.com';
 const title = 'Shree Om Annapurna Caterers - Top Caterers in Ravet, Pune';
@@ -130,6 +131,7 @@ export default function RootLayout({
           playfair_display.variable,
           dancing_script.variable
         )}>
+        <Analytics />
         <CustomCursor />
         {children}
         <Toaster />
