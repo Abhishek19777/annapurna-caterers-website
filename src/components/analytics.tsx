@@ -4,7 +4,7 @@
 import Script from 'next/script';
 
 const Analytics = () => {
-  const measurementId = process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX';
+  const measurementId = 'G-VDR6F0EJT0';
 
   return (
     <>
