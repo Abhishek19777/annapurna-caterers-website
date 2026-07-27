@@ -7,6 +7,7 @@ import { PHONE_NUMBER, ADDRESS, GOOGLE_MAPS_LINK } from '@/lib/constants';
 import { lato, playfair_display, dancing_script } from './fonts';
 import { cn } from '@/lib/utils';
 import Analytics from '@/components/analytics';
+import { Analytics as VercelAnalytics } from '@vercel/analytics/next';
 
 const siteUrl = 'https://shreeomannapurna.com';
 const title = 'Shree Om Annapurna Caterers - Top Caterers in Ravet, Pune';
@@ -135,6 +136,7 @@ export default function RootLayout({
         <CustomCursor />
         {children}
         <Toaster />
+        <VercelAnalytics />
       </body>
     </html>
   );
