@@ -9,10 +9,16 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: { DEFAULT: '1rem', sm: '1.5rem', lg: '2rem' },
+      screens: { '2xl': '1280px' },
+    },
     extend: {
       fontFamily: {
-        body: ['var(--font-lato)', 'sans-serif'],
-        headline: ['var(--font-playfair-display)', 'serif'],
+        body: ['var(--font-body)', 'system-ui', 'sans-serif'],
+        headline: ['var(--font-display)', 'Georgia', 'serif'],
+        'headline-italic': ['var(--font-display-italic)', 'Georgia', 'serif'],
         script: ['var(--font-dancing-script)', 'cursive'],
         code: ['monospace'],
       },

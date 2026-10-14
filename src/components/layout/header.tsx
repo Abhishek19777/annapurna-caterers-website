@@ -7,7 +7,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, UtensilsCrossed } from 'lucide-react';
+import { Menu } from 'lucide-react';
+import LogoMark from '@/components/logo-mark';
 import { WHATSAPP_BOOK_NOW_LINK, NAV_LINKS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 
@@ -28,7 +29,7 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isScrolled]);
 
-  const linkColor = isScrolled ? "text-foreground" : "text-foreground";
+  const linkColor = isScrolled ? "text-foreground/80 hover:text-accent" : "text-foreground/80 hover:text-accent";
 
   return (
     <motion.header 
@@ -37,19 +38,19 @@ const Header = () => {
       transition={{ duration: 0.5 }}
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
-        isScrolled ? "border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "bg-transparent"
+        isScrolled ? "border-b bg-background/85 shadow-sm backdrop-blur-md" : "bg-background"
       )}
     >
-      <div className="container flex h-16 items-center">
-        <div className="mr-auto flex items-center">
-          <Link href="/" className="flex items-center gap-2 font-bold">
-            <UtensilsCrossed className="h-6 w-6 md:h-8 text-primary" />
-            <span className={cn("font-script text-xl md:text-3xl", linkColor)}>
+      <div className="container flex h-16 items-center gap-3 md:h-[4.5rem]">
+        <div className="mr-auto flex min-w-0 items-center">
+          <Link href="/" aria-label="Shree Om Annapurna Caterers - home" className="flex shrink-0 items-center gap-2 font-bold">
+            <Image src="/images/logo.png" alt="" width={48} height={48} priority className="h-9 w-9 shrink-0 md:h-11 md:w-11" />
+            <span className={cn("whitespace-nowrap font-script text-lg font-bold text-accent sm:text-xl md:text-2xl", linkColor)}>
               Shree Om Annapurna
             </span>
           </Link>
         </div>
-        <nav className="hidden items-center space-x-2 text-base font-medium md:flex">
+        <nav className="hidden items-center space-x-1 text-[15px] font-medium xl:flex">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -76,7 +77,7 @@ const Header = () => {
             <a href={WHATSAPP_BOOK_NOW_LINK} target="_blank" rel="noopener noreferrer">Book Now</a>
           </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild className="md:hidden">
+            <SheetTrigger asChild className="xl:hidden">
               <Button variant="outline" size="icon" className={cn("text-foreground")}>
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Open Menu</span>
@@ -86,16 +87,16 @@ const Header = () => {
               <div className="flex flex-col h-full">
                 <div className="mb-8">
                   <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setIsOpen(false)}>
-                    <UtensilsCrossed className="h-8 w-8 text-primary" />
-                    <span className="font-script text-2xl">Shree Om Annapurna</span>
+                    <LogoMark className="h-10 w-10" />
+                    <span className="font-script text-2xl font-bold text-accent">Shree Om Annapurna</span>
                   </Link>
                 </div>
-                <nav className="flex flex-col space-y-4 text-lg">
+                <nav className="flex flex-col space-y-1 text-lg">
                   {NAV_LINKS.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
-                      className="transition-colors hover:text-primary"
+                      className="rounded-lg px-3 py-3 font-medium transition-colors hover:bg-primary/10 hover:text-accent"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.label}

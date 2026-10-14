@@ -31,9 +31,11 @@ export default function VideoPlayer({ videoId, title }: VideoPlayerProps) {
           className="absolute inset-0 h-full w-full"
         />
       ) : (
-        <div
+        <button
+          type="button"
           onClick={handlePlay}
-          className="group relative h-full w-full cursor-pointer"
+          aria-label={`Play video: ${title}`}
+          className="group relative h-full w-full cursor-pointer border-0 bg-transparent p-0 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
         >
           <Image
             src={thumbnailUrl}
@@ -47,7 +49,7 @@ export default function VideoPlayer({ videoId, title }: VideoPlayerProps) {
             <PlayCircle className="h-16 w-16 text-white/80 transition-transform duration-300 group-hover:scale-110 group-hover:text-white" />
           </div>
            <p className="absolute bottom-4 left-4 text-white text-lg font-bold drop-shadow-md">{title}</p>
-        </div>
+        </button>
       )}
     </div>
   );

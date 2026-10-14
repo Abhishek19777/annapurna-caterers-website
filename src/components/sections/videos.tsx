@@ -1,21 +1,22 @@
 
 import React from 'react';
 import VideoPlayer from '@/components/ui/video-player';
-import { VIDEOS } from '@/lib/constants';
+import { getVideos } from '@/lib/youtube';
 
-const Videos = () => {
+const Videos = async () => {
+  const videos = await getVideos();
   return (
-    <section id="videos" className="py-12 md:py-24">
+    <section id="videos" className="section-padding">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-10 md:mb-12">
-          <h2 className="text-2xl sm:text-4xl font-headline mb-4">Our Event Video</h2>
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="section-title section-eyebrow-line">Our Event Video</h2>
+          <p className="section-subtitle">
             See our team in action and get a glimpse of the experiences we create.
           </p>
         </div>
-        <div className="flex justify-center">
-          <div className="w-full max-w-2xl">
-            {VIDEOS.map((video) => (
+        <div className={videos.length > 1 ? 'mx-auto grid max-w-5xl gap-6 md:grid-cols-2 md:gap-8' : 'flex justify-center'}>
+          <div className={videos.length > 1 ? 'contents' : 'w-full max-w-3xl'}>
+            {videos.map((video) => (
               <VideoPlayer
                 key={video.videoId}
                 videoId={video.videoId}

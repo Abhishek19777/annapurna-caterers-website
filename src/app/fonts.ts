@@ -1,23 +1,35 @@
+import { DM_Sans, Cormorant_Garamond, Dancing_Script } from 'next/font/google';
 
-import { Lato, Playfair_Display, Dancing_Script } from 'next/font/google';
-
-export const lato = Lato({
+// Body: DM Sans – clean, friendly, very readable on phones.
+export const dm_sans = DM_Sans({
   subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-lato',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-body',
   display: 'swap',
 });
 
-export const playfair_display = Playfair_Display({
+// Display: Cormorant Garamond – refined high-contrast serif for a premium feel.
+export const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
-  weight: '700',
-  variable: '--font-playfair-display',
+  weight: ['500', '600', '700'],
+  style: 'normal',
+  variable: '--font-display',
   display: 'swap',
 });
 
+// Italic is its own single-style instance (Turbopack can't load two styles in one call).
+export const cormorant_italic = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['500', '600'],
+  style: 'italic',
+  variable: '--font-display-italic',
+  display: 'swap',
+});
+
+// Script: used for the logo and the "Welcome to" line only.
 export const dancing_script = Dancing_Script({
   subsets: ['latin'],
-  weight: '700',
+  weight: ['600', '700'],
   variable: '--font-dancing-script',
   display: 'swap',
 });

@@ -1,21 +1,13 @@
-import { MetadataRoute } from 'next'
- 
+import { MetadataRoute } from 'next';
+
+// One-page site: anchor links (#about etc.) are not separate URLs for search engines.
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://shreeomannapurna.com';
-
-  const staticRoutes = [
-    '/',
-    '/#about',
-    '/#packages',
-    '/#menu',
-    '/#gallery',
-    '/#contact',
+  return [
+    {
+      url: 'https://shreeomannapurna.com/',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 1,
+    },
   ];
-
-  return staticRoutes.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly',
-    priority: route === '/' ? 1 : 0.8,
-  }));
 }

@@ -13,13 +13,13 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
   return (
-    <Card className="bg-background">
-      <CardContent className="p-6">
-        <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground">
+    <Card className="relative overflow-hidden rounded-2xl border-0 bg-[hsl(40,38%,97%)] shadow-xl">
+      <CardContent className="p-6 md:p-8">
+        <blockquote className="border-l-2 border-primary pl-4 font-headline-italic text-xl font-medium italic leading-snug text-foreground md:text-2xl">
           {testimonial.quote}
         </blockquote>
         <div className="mt-4 text-right">
-          <p className="font-bold">{testimonial.name}</p>
+          <p className="font-semibold text-accent">{testimonial.name}</p>
           <p className="text-sm text-muted-foreground">{testimonial.event}</p>
         </div>
       </CardContent>

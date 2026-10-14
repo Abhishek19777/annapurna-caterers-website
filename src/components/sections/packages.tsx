@@ -4,11 +4,11 @@ import PackageCard from '@/components/package-card';
 
 const Packages = () => {
   return (
-    <section id="packages" className="py-12 md:py-24">
+    <section id="packages" className="section-padding">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-10 md:mb-12">
-          <h2 className="text-2xl sm:text-4xl font-headline mb-4">Our Catering Packages</h2>
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="section-title section-eyebrow-line">Our Catering Packages</h2>
+          <p className="section-subtitle">
             Choose from one of our thoughtfully crafted packages.
           </p>
         </div>

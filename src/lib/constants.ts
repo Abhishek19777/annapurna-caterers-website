@@ -5,7 +5,8 @@ export const ADDRESS = "Shree Om Annapurna Caterers, Dattanagar, Sarpanch wasti,
 export const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/5n8NqRmbgUxRW19VA";
 export const INSTAGRAM_LINK = "https://www.instagram.com/shree_om_annapurna_catere?igsh=YXdxd2sxamcxMHd4";
 
-const WHATSAPP_BASE_URL = "https://wa.me/919881337170";
+export const WHATSAPP_NUMBER = "919881337170";
+const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 export const WHATSAPP_BOOK_NOW_LINK = `${WHATSAPP_BASE_URL}?text=Hello%20Shree%20Om%20Annapurna%20Caterers,%20I%20would%20like%20to%20book%20your%20services.`;
 
