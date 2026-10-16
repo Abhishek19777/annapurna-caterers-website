@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
 import Analytics from '@/components/analytics';
 
 const siteUrl = 'https://shreeomannapurna.com';
-const title = 'Shree Om Annapurna Caterers - Top Caterers in Ravet, Pune';
+const title = 'Shree Om Annapurna Caterers | Ravet, Pune';
 const description = 'Top-rated caterers in Ravet, Pune since 2006. Specializing in wedding, corporate, and party catering with authentic Maharashtrian & Indian cuisine.';
 // Local files (not a third-party host) so link previews and search never break.
 const heroImageUrl = `${siteUrl}/images/hero/hero-background.jpg`;

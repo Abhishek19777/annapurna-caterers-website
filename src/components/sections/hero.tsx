@@ -37,14 +37,14 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_35%,rgba(0,0,0,0.45)_100%)]" />
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 pb-28 pt-10 text-center md:pb-32 text-[hsl(40,40%,96%)]">
-        <h1 className="flex flex-col items-center">
-          <motion.span
-            {...reveal(0.1)}
-            className="font-script text-3xl font-semibold text-primary sm:text-4xl md:text-5xl"
-          >
-            Welcome to
-          </motion.span>
+        <motion.span
+          {...reveal(0.1)}
+          className="font-script text-3xl font-semibold text-primary sm:text-4xl md:text-5xl"
+        >
+          Welcome to
+        </motion.span>
 
+        <h1 className="flex flex-col items-center">
           <motion.span
             {...reveal(0.3)}
             className="mt-2 font-headline text-[2.9rem] font-semibold leading-[0.95] tracking-tight drop-shadow-[0_4px_24px_rgba(0,0,0,0.45)] sm:text-7xl md:text-8xl lg:text-[8.5rem]"

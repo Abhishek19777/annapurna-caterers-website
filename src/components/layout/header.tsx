@@ -44,7 +44,7 @@ const Header = () => {
       <div className="container flex h-16 items-center gap-3 md:h-[4.5rem]">
         <div className="mr-auto flex min-w-0 items-center">
           <Link href="/" aria-label="Shree Om Annapurna Caterers - home" className="flex shrink-0 items-center gap-2 font-bold">
-            <Image src="/images/logo.png" alt="" width={48} height={48} priority className="h-9 w-9 shrink-0 md:h-11 md:w-11" />
+            <Image src="/images/logo.png" alt="Shree Om Annapurna Caterers logo" width={48} height={48} priority className="h-9 w-9 shrink-0 md:h-11 md:w-11" />
             <span className={cn("whitespace-nowrap font-script text-lg font-bold text-accent sm:text-xl md:text-2xl", linkColor)}>
               Shree Om Annapurna
             </span>
