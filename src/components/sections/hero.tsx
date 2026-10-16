@@ -70,7 +70,7 @@ const Hero = () => {
           {...reveal(0.8)}
           className="mt-6 max-w-2xl text-base font-light leading-relaxed text-white/85 md:mt-8 md:text-xl"
         >
-          Authentic Flavours, Unforgettable Events. The Leading Caterers in Ravet, Pune since 2006.
+          Shree Om Annapurna Caterers brings authentic flavours to unforgettable events across Ravet and Pune since 2006.
         </motion.p>
 
         <motion.div
